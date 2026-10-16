@@ -1,13 +1,13 @@
-# Mossy Hollow Café
+# Rainforest Café
 
 A responsive, frontend-only website for a fictional forest-themed café with a cosy, woodsy feel.
 
-**Live site:** https://swathi25o3.github.io/Cafe-website/
-**Repository:** https://github.com/swathi25o3/Cafe-website
+**Live site:** https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
+**Repository:** https://github.com/YOUR-USERNAME/YOUR-REPO-NAME
 
 ## Project overview
 
-**Idea:** Mossy Hollow is a cabin-in-the-woods café serving warm drinks and fresh bakes in a calm, cosy setting.
+**Idea:** Rainforest is a cabin-in-the-woods café serving warm drinks and fresh bakes in a calm, cosy setting.
 
 **Purpose:** Let visitors learn the café's story, browse the menu, find the address and hours, and request a table.
 
