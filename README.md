@@ -2,8 +2,8 @@
 
 A responsive, frontend-only website for a fictional forest-themed café with a cosy, woodsy feel.
 
-**Live site:** https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
-**Repository:** https://github.com/YOUR-USERNAME/YOUR-REPO-NAME
+**Live site:** https://swathi25o3.github.io/Cafe-website/
+**Repository:** https://github.com/swathi25o3/Cafe-website
 
 ## Project overview
 
