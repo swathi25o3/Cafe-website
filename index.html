@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mossy Hollow Café | A Cosy Forest Café</title>
+  <meta name="description" content="Mossy Hollow Café is a cosy forest-themed café serving hot chocolate, herbal teas, coffee and baked treats.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="brand">Mossy Hollow</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="siteNav" class="site-nav">
+      <a href="#about">Our story</a>
+      <a href="#favourites">Favourites</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="fireflies" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="hero-text">
+        <h1>Come in from the woods. Stay a while.</h1>
+        <p>A cosy forest café with warm drinks, fresh bakes and a corner by the fire with your name on it.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">See the menu</a>
+          <a class="btn btn-ghost" href="#visit">Find us</a>
+        </div>
+      </div>
+      <svg class="treeline" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+        <g fill="#0E1F17">
+          <path d="M0 220 V150 L30 90 L50 120 L80 40 L110 120 L130 90 L160 150 V220Z"/>
+          <path d="M170 220 V130 L210 60 L235 100 L270 10 L305 100 L330 60 L370 130 V220Z"/>
+          <path d="M400 220 V160 L430 110 L455 140 L490 70 L525 140 L550 110 L580 160 V220Z"/>
+          <path d="M610 220 V120 L650 50 L675 90 L710 0 L745 90 L770 50 L810 120 V220Z"/>
+          <path d="M840 220 V150 L870 100 L895 130 L930 60 L965 130 L990 100 L1020 150 V220Z"/>
+          <path d="M1040 220 V130 L1080 60 L1105 100 L1140 20 L1175 100 L1200 80 V220Z"/>
+        </g>
+      </svg>
+    </section>
+
+    <section class="section about" id="about">
+      <h2>Our story</h2>
+      <p class="lead">We built Mossy Hollow to feel like a cabin you happen to find at the end of a trail.</p>
+      <div class="about-grid">
+        <p>Our tables are reclaimed wood, our lamps are warm and low, and the shelves are full of books you are welcome to read. Nothing here is rushed.</p>
+        <p>We brew small-batch coffee, steep loose-leaf herbal teas and bake every morning. Come for a quiet hour, a catch-up with friends, or a rainy afternoon with a book and a blanket.</p>
+      </div>
+    </section>
+
+    <section class="section favourites" id="favourites">
+      <h2>House favourites</h2>
+      <div class="carousel" id="carousel" aria-roledescription="carousel" aria-label="House favourites">
+        <div class="slides" id="slides">
+          <article class="slide" style="--bg:#1F3D2E">
+            <h3>Campfire Hot Chocolate</h3>
+            <p>Dark chocolate melted into steamed milk, finished with a toasted marshmallow and a pinch of sea salt.</p>
+            <span class="price">₹170</span>
+          </article>
+          <article class="slide" style="--bg:#5A3E2B">
+            <h3>Maple Pine Latte</h3>
+            <p>Espresso, steamed milk and maple syrup infused with a touch of pine needle. Earthy and sweet.</p>
+            <span class="price">₹190</span>
+          </article>
+          <article class="slide" style="--bg:#3E5A3A">
+            <h3>Warm Cinnamon Roll</h3>
+            <p>Baked every morning, glazed while still warm and served with a small pot of tea.</p>
+            <span class="price">₹150</span>
+          </article>
+        </div>
+        <div class="carousel-controls">
+          <button class="icon-btn" id="prevBtn" aria-label="Previous slide">&#8592;</button>
+          <div class="dots" id="dots" role="tablist" aria-label="Choose slide"></div>
+          <button class="icon-btn" id="nextBtn" aria-label="Next slide">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu" id="menu">
+      <h2>Menu</h2>
+      <div class="filters" role="group" aria-label="Filter menu">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="coffee">Coffee</button>
+        <button class="filter" data-filter="tea">Tea &amp; cocoa</button>
+        <button class="filter" data-filter="bakes">Bakes</button>
+      </div>
+      <ul class="menu-list" id="menuList">
+        <li data-cat="coffee"><div><h3>Maple Pine Latte</h3><p>Espresso, milk, maple, pine</p></div><span>₹190</span></li>
+        <li data-cat="coffee"><div><h3>Hazelnut Cappuccino</h3><p>Rich and nutty with velvety foam</p></div><span>₹160</span></li>
+        <li data-cat="coffee"><div><h3>Cabin Cold Brew</h3><p>Slow steeped, served over ice</p></div><span>₹180</span></li>
+        <li data-cat="tea"><div><h3>Campfire Hot Chocolate</h3><p>Dark chocolate, toasted marshmallow</p></div><span>₹170</span></li>
+        <li data-cat="tea"><div><h3>Forest Chamomile</h3><p>Chamomile, lemon balm and honey</p></div><span>₹120</span></li>
+        <li data-cat="tea"><div><h3>Spiced Chai</h3><p>Cardamom, cinnamon and black pepper</p></div><span>₹110</span></li>
+        <li data-cat="bakes"><div><h3>Warm Cinnamon Roll</h3><p>Fresh glaze, baked this morning</p></div><span>₹150</span></li>
+        <li data-cat="bakes"><div><h3>Wild Mushroom Toast</h3><p>Garlic mushrooms, thyme, sourdough</p></div><span>₹220</span></li>
+        <li data-cat="bakes"><div><h3>Honey Oat Cookie</h3><p>Chewy, with a drizzle of honey</p></div><span>₹90</span></li>
+      </ul>
+    </section>
+
+    <section class="section visit" id="visit">
+      <h2>Visit us</h2>
+      <div class="visit-grid">
+        <div class="info">
+          <h3>Find the hollow</h3>
+          <p>24, Cedar Lane, Yercaud Road<br>Salem 636001</p>
+          <h3>Opening hours</h3>
+          <p>Every day: 8 am to 9 pm<br>Fireside evenings on Fridays and Saturdays</p>
+          <h3>Call</h3>
+          <p><a href="tel:+910000000000">+91 00000 00000</a></p>
+        </div>
+        <form class="contact" id="contactForm" novalidate>
+          <h3>Save a cosy corner</h3>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <label for="guests">Number of guests</label>
+          <input id="guests" name="guests" type="number" min="1" max="12" value="2" required>
+          <button class="btn btn-primary" type="submit">Request a table</button>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Mossy Hollow Café. Made for a frontend project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
