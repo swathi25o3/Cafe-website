@@ -49,11 +49,11 @@ README.md    project documentation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+   git clone https://github.com/swathi25o3/Cafe-website.git
    ```
 2. Open the folder:
    ```
-   cd YOUR-REPO-NAME
+   cd Cafe-website
    ```
 3. Open `index.html` in any modern browser. No build step is needed.
 
